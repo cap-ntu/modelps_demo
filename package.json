@@ -1,0 +1,30 @@
+{
+  "name": "@alifd/scaffold-simple",
+  "version": "0.1.0",
+  "description": "ModelPS demonstration.",
+  "dependencies": {
+    "antd": "^4.15.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@iceworks/spec": "^1.0.0",
+    "eslint": "^6.8.0",
+    "ice.js": "^1.0.0",
+    "stylelint": "^13.2.0"
+  },
+  "scripts": {
+    "start": "icejs start",
+    "build": "icejs build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/scaffold-simple"
+  },
+  "private": true,
+  "originTemplate": "@alifd/scaffold-simple"
+}
