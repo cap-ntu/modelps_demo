@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/modelps_demo/static/css/main.6b3564db.chunk.css",
+    "main.js": "/modelps_demo/static/js/main.2105452e.chunk.js",
+    "main.js.map": "/modelps_demo/static/js/main.2105452e.chunk.js.map",
+    "runtime-main.js": "/modelps_demo/static/js/runtime-main.8d75502e.js",
+    "runtime-main.js.map": "/modelps_demo/static/js/runtime-main.8d75502e.js.map",
+    "static/css/2.c02757eb.chunk.css": "/modelps_demo/static/css/2.c02757eb.chunk.css",
+    "static/js/2.2938f96d.chunk.js": "/modelps_demo/static/js/2.2938f96d.chunk.js",
+    "static/js/2.2938f96d.chunk.js.map": "/modelps_demo/static/js/2.2938f96d.chunk.js.map",
+    "static/js/3.14f68b00.chunk.js": "/modelps_demo/static/js/3.14f68b00.chunk.js",
+    "static/js/3.14f68b00.chunk.js.map": "/modelps_demo/static/js/3.14f68b00.chunk.js.map",
+    "index.html": "/modelps_demo/index.html",
+    "static/css/2.c02757eb.chunk.css.map": "/modelps_demo/static/css/2.c02757eb.chunk.css.map",
+    "static/css/main.6b3564db.chunk.css.map": "/modelps_demo/static/css/main.6b3564db.chunk.css.map",
+    "static/js/2.2938f96d.chunk.js.LICENSE.txt": "/modelps_demo/static/js/2.2938f96d.chunk.js.LICENSE.txt",
+    "static/media/dashboard.dce01b85.gif": "/modelps_demo/static/media/dashboard.dce01b85.gif",
+    "static/media/edit.547ac7ee.gif": "/modelps_demo/static/media/edit.547ac7ee.gif",
+    "static/media/genie.6cfa4ba9.gif": "/modelps_demo/static/media/genie.6cfa4ba9.gif",
+    "static/media/model_upload.fc3aaeef.gif": "/modelps_demo/static/media/model_upload.fc3aaeef.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d75502e.js",
+    "static/css/2.c02757eb.chunk.css",
+    "static/js/2.2938f96d.chunk.js",
+    "static/css/main.6b3564db.chunk.css",
+    "static/js/main.2105452e.chunk.js"
+  ]
+}
