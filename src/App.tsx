@@ -1,12 +1,13 @@
-import React, { useCallback } from 'react';
-import { Row, Col, Typography, message, Space, Card, Image } from 'antd';
-import modelUpload from '@/assets/model_upload.gif';
-import modelEdit from '@/assets/edit.gif';
-import modelGenie from '@/assets/genie.gif';
-import modelDashboard from '@/assets/dashboard.gif';
-import Footer from '@/components/Footer';
+import React, {useCallback} from 'react';
+import {Card, Col, Image, message, Row, Space, Typography} from "antd";
+import './App.css';
+import modelUpload from './assets/model_upload.gif';
+import modelEdit from './assets/edit.gif';
+import modelGenie from './assets/genie.gif';
+import modelDashboard from './assets/dashboard.gif';
 
-const Caption = ({ order, text }: { order?: number; text: string }) => (
+
+const Caption = ({order, text}: { order?: number; text: string }) => (
   <div className="text-center">
     {order ? <Typography.Text strong>({order}) </Typography.Text> : undefined}
     <Typography.Text>{text}</Typography.Text>
@@ -18,11 +19,11 @@ const Guide = () => {
     e.preventDefault();
     const promise = navigator.clipboard.writeText(
       '@article{li2021modelps,\n' +
-        '  title={ModelPS: An Interactive and Collaborative Platform for Editing Pre-trained Models at Scale},\n' +
-        '  author={Li, Yuanming and Zhang, Huaizheng and Jiang, Shanshan and Yang, Fan and Wen, Yonggang and Luo, Yong},\n' +
-        '  journal={arXiv preprint arXiv:2105.08275},\n' +
-        '  year={2021}\n' +
-        '}',
+      '  title={ModelPS: An Interactive and Collaborative Platform for Editing Pre-trained Models at Scale},\n' +
+      '  author={Li, Yuanming and Zhang, Huaizheng and Jiang, Shanshan and Yang, Fan and Wen, Yonggang and Luo, Yong},\n' +
+      '  journal={arXiv preprint arXiv:2105.08275},\n' +
+      '  year={2021}\n' +
+      '}',
     );
     promise.then(() => {
       message.success('You have copied the bibtex citation!');
@@ -78,20 +79,20 @@ const Guide = () => {
       <Card title={<Typography.Title level={3}>Demonstration</Typography.Title>} hoverable>
         <Row gutter={[16, 24]}>
           <Col xl={12}>
-            <Image src={modelUpload} />
-            <Caption order={1} text="Upload Model" />
+            <Image src={modelUpload}/>
+            <Caption order={1} text="Upload Model"/>
           </Col>
           <Col xl={12}>
-            <Image src={modelEdit} />
-            <Caption order={2} text="Edit Pre-trained Model" />
+            <Image src={modelEdit}/>
+            <Caption order={2} text="Edit Pre-trained Model"/>
           </Col>
           <Col xl={12}>
-            <Image src={modelGenie} />
-            <Caption order={3} text="Search Training Configuration with Model Genie" />
+            <Image src={modelGenie}/>
+            <Caption order={3} text="Search Training Configuration with Model Genie"/>
           </Col>
           <Col xl={12}>
-            <Image src={modelDashboard} />
-            <Caption order={4} text="Model Dashboard" />
+            <Image src={modelDashboard}/>
+            <Caption order={4} text="Model Dashboard"/>
           </Col>
         </Row>
       </Card>
@@ -99,19 +100,23 @@ const Guide = () => {
   );
 };
 
-const Dashboard = () => {
+function App() {
   return (
     <>
-      <Row justify="center" gutter={[0, 16]} style={{ minHeight: '100vh' }}>
-        <Col lg={22} xl={20} xxl={16} style={{ marginTop: 48 }}>
-          <Guide />
+      <Row justify="center" gutter={[0, 16]} style={{minHeight: '100vh'}}>
+        <Col lg={22} xl={20} xxl={16} style={{marginTop: 48}}>
+          <Guide/>
         </Col>
       </Row>
-      <div style={{ opacity: 0.3, padding: '16px 0' }}>
-        <Footer />
+      <div style={{opacity: 0.3, padding: '16px 0px'}}>
+        <p className="footer">
+          <span className="logo">CAP NTU</span>
+          <br/>
+          <span className="copyright">© 2021 Nanyang Technological University, Singapore</span>
+        </p>
       </div>
     </>
   );
-};
+}
 
-export default Dashboard;
+export default App;
